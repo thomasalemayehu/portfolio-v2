@@ -1,14 +1,16 @@
-import About from "./components/About";
-import Home from "./components/Home"
+import About from "./pages/About";
+import Home from "./pages/Home"
 
 
-import Navigation from './components/Navigation';
+import Navigation from './pages/Navigation';
+import Projects from "./pages/Projects";
 function App() {
   return (
     <>
       <Navigation />
       <Home />
       <About />
+      <Projects />
     </>
   )
 }
