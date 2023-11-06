@@ -87,7 +87,7 @@
   font-size: 4rem;
 }
 .timeline__content{
-    font-family: var(--heading-font);
+    font-family: var(--secondary-font);
 }
 @media only screen and (min-width: 351px) and (max-width: 576px) {
   .about__page__left {

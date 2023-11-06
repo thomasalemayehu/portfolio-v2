@@ -1,12 +1,12 @@
 // utils
-import formValidator from "../util/FormValidator";
+// import formValidator from "../util/FormValidator";
 
 // Import Styles
 import contactStyle from "../assets/styles/Contact.module.css";
 
 function Contact() {
   function handleFormSubmission() {
-    formValidator();
+    // formValidator();
   }
   return (
     <section
@@ -21,7 +21,14 @@ function Contact() {
           <h2>get in touch</h2>
           <p>
             Fill up the form and I will get back to you as soon as possible! You
-            can find me on upwork and fiver as well.
+            can also contact me on{" "}
+            <a
+              href="https://www.linkedin.com/in/thomas-mechessa/"
+              target="__blank"
+            >
+              Linkedin
+            </a>{" "}
+            or <a href="mailto:thomas2alexmech@gmail.com">email me</a>.
           </p>
           {/* Email */}
           <div className={contactStyle.contact__info__container}>
@@ -33,16 +40,7 @@ function Contact() {
               <path d="m280.4 168.1-41.6 35.3a8.8 8.8 0 0 1-11.4 0l-41.6-35.2-170 143.6h433.8L280.4 168.1zM0 10.7v290.4l171.1-145.2z" />
               <path d="m15.9 0 216.9 184L449.6 0zM294.4 155.9l171.1 145.2V10.7z" />
             </svg>
-            <div className={contactStyle.flag}>Addis Ababa, Ethiopia </div>
-
-            <span>
-              <img
-                src="/assets/icons/Ethiopia.svg"
-                alt="Ethiopian Flag"
-                width={20}
-                height={20}
-              />
-            </span>
+            <div className={contactStyle.flag}>Fairfield,Iowa, USA </div>
           </div>
           {/* Location */}
           <div className={contactStyle.contact__info__container}>
@@ -55,19 +53,6 @@ function Contact() {
             </svg>
             <div>thomas2alexmech@gmail.com</div>
           </div>
-          {/* Phone Number */}
-          {/* <div className={contactStyle.contact__info__container}>
-            <svg version="1.0" viewBox="0 0 53.9 53.9">
-              <path
-                d="M53.4,40.9c-2-3.8-9-7.9-9.3-8.1c-0.9-0.5-1.8-0.8-2.7-0.8c-1.3,0-2.4,0.6-3,1.7c-1,1.2-2.3,2.6-2.6,2.9
-	c-2.4,1.6-4.2,1.4-6.3-0.6L18,24.5c-2-2-2.2-3.9-0.6-6.3c0.2-0.3,1.6-1.6,2.9-2.6c0.8-0.5,1.3-1.2,1.5-2c0.3-1.1,0.1-2.4-0.7-3.7
-	c-0.2-0.3-4.3-7.3-8.1-9.3C12.3,0.2,11.5,0,10.7,0C9.4,0,8.2,0.5,7.2,1.4L4.7,4c-4,4-5.5,8.6-4.3,13.5c1,4.1,3.7,8.5,8.3,13.1
-	l14.7,14.7c5.7,5.7,11.2,8.7,16.3,8.7c0,0,0,0,0,0c3.7,0,7.2-1.6,10.3-4.7l2.5-2.5C54,45.2,54.4,42.8,53.4,40.9z"
-              />
-            </svg>
-
-            <div>An email will do😉</div>
-          </div> */}
         </div>
 
         {/* Socials */}
