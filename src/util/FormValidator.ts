@@ -1,10 +1,6 @@
 /* eslint-disable no-useless-escape */
-import { init } from "@emailjs/browser";
-// import emailjs from "emailjs-com";
-import Mailgun from "mailgun";
-import formData from "form-data";
+// import formData from "form-data";
 
-init("gTool4GJ057LvqAfd");
 
 function formValidator() {
   /*
@@ -249,29 +245,30 @@ function validatePhone(id: string, errorDisplayId: string): boolean {
 }
 
 async function sendEmail(
-//   firstName: string,
-//   lastName: string,
-//   email: string,
-//   phone: string,
-//   subject: string,
-//   message: string
+  firstName: string,
+  lastName: string,
+  email: string,
+  phone: string,
+  subject: string,
+  message: string
 ) {
 
-  const mailgun = new Mailgun(formData);
-  const mg = mailgun.client({
-    username: "api",
-    key: "f2c811e921c24dc6458eeabe89b5798d-3e508ae1-bdf44101",
-  });
+  console.log(firstName,lastName,email,phone,subject,message)
+  // const mailgun = new Mailgun(formData);
+  // const mg = mailgun.client({
+  //   username: "api",
+  //   key: "f2c811e921c24dc6458eeabe89b5798d-3e508ae1-bdf44101",
+  // });
 
-  mg.messages
-    .create("sandbox-123.mailgun.org", {
-      from: "Excited User <mailgun@sandbox-123.mailgun.org>",
-      to: ["test@example.com"],
-      subject: "Hello",
-      text: "Testing some Mailgun awesomeness!",
-      html: "<h1>Testing some Mailgun awesomeness!</h1>",
-    })
-    .then((msg) => console.log(msg)) // logs response data
-    .catch((err) => console.log(err)); // logs any error
+  // mg.messages
+  //   .create("sandbox-123.mailgun.org", {
+  //     from: "Excited User <mailgun@sandbox-123.mailgun.org>",
+  //     to: ["test@example.com"],
+  //     subject: "Hello",
+  //     text: "Testing some Mailgun awesomeness!",
+  //     html: "<h1>Testing some Mailgun awesomeness!</h1>",
+  //   })
+  //   .then((msg) => console.log(msg)) // logs response data
+  //   .catch((err) => console.log(err)); // logs any error
 }
 export default formValidator;
