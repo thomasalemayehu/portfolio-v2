@@ -7,12 +7,16 @@ function App() {
   return (
     <>
       <Navigation />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
+      <div style={{
+        padding:"0 5%"
+      }}>
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+      </div>
     </>
-  )
+  );
 }
 
 export default App

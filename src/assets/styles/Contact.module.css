@@ -136,20 +136,6 @@
   border-bottom: 2px solid var(--accent-color);
 }
 
-.contact__form__submit__button {
-  margin-top: 60px;
-  background-color: var(--accent-color);
-  color: var(--primary-color);
-  width: fit-content;
-  padding: 10px 36px;
-  text-decoration: none;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
 .contact__decoration,
 .contact__decoration_small {
   display: none;

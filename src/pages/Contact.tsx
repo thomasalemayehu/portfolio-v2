@@ -3,7 +3,8 @@
 
 // Import Styles
 import contactStyle from "../assets/styles/Contact.module.css";
-
+import Button from "../components/Button";
+import content from "../content.json";
 function Contact() {
   function handleFormSubmission() {
     // formValidator();
@@ -40,7 +41,7 @@ function Contact() {
               <path d="m280.4 168.1-41.6 35.3a8.8 8.8 0 0 1-11.4 0l-41.6-35.2-170 143.6h433.8L280.4 168.1zM0 10.7v290.4l171.1-145.2z" />
               <path d="m15.9 0 216.9 184L449.6 0zM294.4 155.9l171.1 145.2V10.7z" />
             </svg>
-            <div className={contactStyle.flag}>Fairfield,Iowa, USA </div>
+            <div className={contactStyle.flag}>{content.location} </div>
           </div>
           {/* Location */}
           <div className={contactStyle.contact__info__container}>
@@ -51,7 +52,7 @@ function Contact() {
             >
               <path d="M197.8 0A137.5 137.5 0 0 0 60.5 137.3c0 72.9 124.6 243.2 129.9 250.4l5 6.7c.6.8 1.5 1.3 2.5 1.3s1.9-.5 2.5-1.3l4.9-6.7c5.3-7.2 129.9-177.5 129.9-250.4C335.2 61.6 273.6 0 197.8 0zm0 88.1a49.3 49.3 0 0 1 0 98.4 49.3 49.3 0 0 1 0-98.4z" />
             </svg>
-            <div>thomas2alexmech@gmail.com</div>
+            <div>{content.email}</div>
           </div>
         </div>
 
@@ -212,12 +213,7 @@ function Contact() {
         </div>
 
         {/* Submit Button */}
-        <div
-          className={contactStyle.contact__form__submit__button}
-          onClick={handleFormSubmission}
-        >
-          Send
-        </div>
+        <Button label="Send" callback={handleFormSubmission} />
       </form>
     </section>
   );
