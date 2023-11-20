@@ -50,68 +50,107 @@ function Projects() {
       header_image_path: `${hostURL}/Addis-Complaints.png`,
       github_link: "https://github.com/thomasalemayehu/Addis-Complaints",
     },
+    {
+      id: 6,
+      title: "MicroBanka",
+      description_short:
+        "An online banking application built with an Express.js and MongoDB backend and an HTML,CSS,AJAX and JavaScript frontend that allows users to transfer,deposit and withdraw money.",
+      header_image_path: `${hostURL}/Addis-Complaints.png`,
+      github_link: "https://github.com/thomasalemayehu/WAP-Project",
+    },
   ];
 
-    const mentions = [
-      {
-        id: 1,
-        title: "Malware Collection",
-        description_short:
-          "A collection of python based malware including ransomware, backdoor and backdoor with clustering.",
-        github_link: "https://github.com/thomasalemayehu/FITS-Project",
-      },
-      {
-        id: 2,
-        title: "Dice Game",
-        description_short:
-          " A web based game that is based on chance. (Based on a famous real world game called “Pass the Pigs”)",
-        github_link: "https://github.com/thomasalemayehu/FITS-Project",
-        external_link: "https://thomasalemayehu.github.io/Dice-Game/",
-      },
-      {
-        id: 3,
-        title: "Tailwind Personal Website",
-        description_short: " A personal website made with tailwindcss",
-        github_link: "https://github.com/thomasalemayehu/Tailwind-Portfolio",
-        external_link: "https://thomasalemayehu.github.io/Tailwind-Portfolio/",
-      },
-      {
-        id: 4,
-        title: "Cinema Plus",
-        description_short: "A wordpress theme developed from scratch.",
-        github_link: "https://github.com/thomasalemayehu/cinema-plus",
-      },
-      {
-        id: 5,
-        title: "Follow Socials Widget",
-        description_short: "A wordpress widget developed from scratch.",
-        github_link: "https://github.com/thomasalemayehu/FollowSocialsWidget",
-      },
-      {
-        id: 6,
-        title: "Restaurant Website",
-        description_short:
-          "An html,css and js based restaurant website that is fully responsive.",
-        github_link:
-          "https://github.com/thomasalemayehu/Restaurant-Website-Colored",
-        external_link:
-          "https://thomasalemayehu.github.io/Restaurant-Website-Colored/",
-      },
-      {
-        id: 7,
-        title: "The Scholars",
-        description_short:
-          "A mobile app for applying to Scholarship opportunities.",
-        github_link: "https://github.com/thomasalemayehu/the-scholars",
-      },
-      {
-        id: 8,
-        title: "Network Port Scanner",
-        description_short:
-          "A python based port scanner usable for reconnaissance of a network.",
-        github_link: "https://github.com/thomasalemayehu/port-scanner",
-      },
-    ];
+  const mentions = [
+    {
+      id: 1,
+      title: "DotFramework",
+      description_short:
+        "A mini Spring Core clone that performs the main tasks for Spring Core such as DI and Scheduling. Multiple Design patterns and Reflection were used to realize the framework",
+      github_link: "https://github.com/thomasalemayehu/FITS-Project",
+    },
+    {
+      id: 2,
+      title: "Advent of JavaScript (2022)",
+      description_short:
+        "A collection of UI Elements and pages based one the famous Advent of JavaScript challenge. (From https://www.adventofjs.com/signup)",
+      github_link: "https://github.com/thomasalemayehu/FITS-Project",
+    },
+    {
+      id: 3,
+      title: "Malware Collection",
+      description_short:
+        "A collection of python based malware including ransomware, backdoor and backdoor with clustering.",
+      github_link: "https://github.com/thomasalemayehu/FITS-Project",
+    },
+
+    {
+      id: 4,
+      title: "Tailwind Personal Website",
+      description_short: " A personal website made with tailwindcss",
+      github_link: "https://github.com/thomasalemayehu/Tailwind-Portfolio",
+      external_link: "https://thomasalemayehu.github.io/Tailwind-Portfolio/",
+    },
+    {
+      id: 5,
+      title: "Cinema Plus",
+      description_short: "A wordpress theme developed from scratch.",
+      github_link: "https://github.com/thomasalemayehu/cinema-plus",
+    },
+    {
+      id: 6,
+      title: "Follow Socials Widget",
+      description_short: "A wordpress widget developed from scratch.",
+      github_link: "https://github.com/thomasalemayehu/FollowSocialsWidget",
+    },
+    {
+      id: 7,
+      title: "Restaurant Website",
+      description_short:
+        "An html,css and js based restaurant website that is fully responsive.",
+      github_link:
+        "https://github.com/thomasalemayehu/Restaurant-Website-Colored",
+      external_link:
+        "https://thomasalemayehu.github.io/Restaurant-Website-Colored/",
+    },
+    {
+      id: 8,
+      title: "The Scholars",
+      description_short:
+        "A mobile app for applying to Scholarship opportunities.",
+      github_link: "https://github.com/thomasalemayehu/the-scholars",
+    },
+    {
+      id: 9,
+      title: "Network Port Scanner",
+      description_short:
+        "A python based port scanner usable for reconnaissance of a network.",
+      github_link: "https://github.com/thomasalemayehu/port-scanner",
+    },
+
+    {
+      id: 10,
+      title: "Restaurant Website 2",
+      description_short:
+        "An html,css and js based restaurant website that is fully responsive.",
+      github_link:
+        "https://github.com/thomasalemayehu/Restaurant-Website-Colored",
+      external_link:
+        "https://thomasalemayehu.github.io/Restaurant-Website-Colored/",
+    },
+
+    {
+      id: 11,
+      title: "Restaurant Website 2",
+      description_short:
+        "An html,css and js based restaurant website that is fully responsive.",
+      github_link:
+        "https://github.com/thomasalemayehu/Restaurant-Website-Colored",
+      external_link:
+        "https://thomasalemayehu.github.io/Restaurant-Website-Colored/",
+    },
+  ];
+
+  
   return (
     <main className={projectStyles.container} id="WorkSection">
       <h3>My Projects</h3>

@@ -6,6 +6,7 @@
   flex-direction: row;
   justify-content: space-between;
   scroll-snap-align: start;
+  padding-top: 150px;
 }
 
 .left__container {

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import addProjectStyles from "../assets/styles/AddProject.module.css";
 import Button from "../components/Button";
+import axios from "axios";
+// import axios from "axios";
 
 function AddProjectPage() {
   const [leadImage, setLeadImage] = useState<FileWithPreview | null>(null);
@@ -131,18 +133,130 @@ function AddProjectPage() {
           placeholder="Live Link"
         />
 
+        <select name="projectType" id="projectType">
+          <option value="Main">Main Project</option>
+          <option value="Side">Side Project</option>
+        </select>
+
         <div className={addProjectStyles.spacer}></div>
         <Button
           label="Save"
-          callback={() => {
-            console.log(leadImage);
-            console.log(selectedImages);
+          callback={async (e: React.FormEvent) => {
+            e.preventDefault();
+            const titleInput: HTMLInputElement | null = document.getElementById(
+              "title"
+            ) as HTMLInputElement | null;
+            const descriptionInput: HTMLInputElement | null =
+              document.getElementById("description") as HTMLInputElement | null;
+            const techStackInput: HTMLInputElement | null =
+              document.getElementById("techStack") as HTMLInputElement | null;
+            const githubLinkInput: HTMLInputElement | null =
+              document.getElementById("githubLink") as HTMLInputElement | null;
+            const liveLinkInput: HTMLInputElement | null =
+              document.getElementById("liveLink") as HTMLInputElement | null;
+
+            const projectType: HTMLInputElement | null =
+              document.getElementById("projectType") as HTMLInputElement | null;
+            if (
+              !titleInput ||
+              !descriptionInput ||
+              !techStackInput ||
+              !githubLinkInput ||
+              !liveLinkInput ||
+              !projectType
+            )
+              return;
+
+            const formData = new FormData();
+            formData.append("title", titleInput.value);
+            formData.append("description", descriptionInput.value);
+            formData.append("techStack", techStackInput.value);
+            formData.append("githubLink", githubLinkInput.value);
+            formData.append("liveLink", liveLinkInput.value);
+            formData.append("projectType", projectType.value);
+            formData.append("leadImage", leadImage?.file as File);
+            selectedImages.forEach((image: FileWithPreview) =>
+              formData.append("selectedImages", image.file as File)
+            );
+
+             try {
+               const response = await axios.post(
+                 "http://localhost:3000/",
+                 formData,
+                 {
+                   headers: {
+                     "Content-Type": "multipart/form-data",
+                   },
+                 }
+               );
+
+               console.log(response.data);
+             } catch (error) {
+               console.error("Error:", error);
+             }
+            // // const projectInfo: ProjectInfo = {
+            // //   title: titleInput.value,
+            // //   description: descriptionInput.value,
+            // //   techStack: techStackInput.value.split(","),
+            // //   githubLink: githubLinkInput.value,
+            // //   liveLink: liveLinkInput.value,
+            // //   projectType: projectType.value as "Main" | "Side",
+            // //   leadImage: leadImage?.file,
+            // //   selectedImages: selectedImages.map((image) => image.file),
+            // // };
+
+            // // Create a new FormData object
+            // e.prev;
+
+            // // Append form fields to the FormData object
+
+            // // Define the URL of your API endpoint
+            // const apiUrl = "http://localhost:3000";
+
+            // // Send the form data with the Fetch API
+            // fetch(apiUrl, {
+            //   method: "POST",
+            //   body: formData,
+            // })
+            //   .then((response) => {
+            //     if (!response.ok) {
+            //       throw new Error("Network response was not ok");
+            //     }
+            //     return response.json(); // Parse the response as JSON
+            //   })
+            //   .then((data) => {
+            //     // Handle the response data from the server
+            //     console.log(data);
+            //   })
+            //   .catch((error) => {
+            //     // Handle any errors that may occur during the request
+            //     console.error(error);
+            //   });
           }}
         />
       </div>
     </div>
   );
 }
+
+// function convertToFormData(projectInfo: ProjectInfo): FormData {
+//   const formData = new FormData();
+
+//   formData.append("title", projectInfo.title);
+//   formData.append("description", projectInfo.description);
+//   formData.append("projectType", projectInfo.projectType);
+//   formData.append("githubLink", projectInfo.githubLink);
+//   formData.append("liveLink", projectInfo.liveLink);
+//   projectInfo.selectedImages?.forEach((image) => {
+//     formData.append("selectedImages", image);
+//   });
+//   projectInfo.techStack.forEach((techStack) => {
+//     formData.append("techStack", techStack);
+//   });
+//   // formData.append("techStack", projectInfo.techStack);
+
+//   return formData;
+// }
 
 interface FileWithPreview {
   file: File;
@@ -153,6 +267,17 @@ interface ImagePreviewInfo {
   imagePath: string;
   altText: string;
 }
+
+// interface ProjectInfo {
+//   title: string;
+//   description: string;
+//   techStack: string[];
+//   githubLink: string;
+//   liveLink: string;
+//   leadImage?: File;
+//   selectedImages?: File[];
+//   projectType: "Main" | "Side";
+// }
 
 function ImagePreview({ imagePath, altText }: ImagePreviewInfo) {
   return (
