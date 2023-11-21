@@ -5,6 +5,7 @@ import Navigation from "./pages/Navigation";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 function App() {
+  console.log(import.meta.env.VITE_APP_MAILGUN_DOMAIN);
   return (
     <>
       <Navigation />

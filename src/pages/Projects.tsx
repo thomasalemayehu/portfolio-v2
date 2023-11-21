@@ -3,8 +3,6 @@ import LeadProjectCard from "../components/LeadProject";
 import projectStyles from "../assets/styles/Projects.module.css";
 import SideProject from "../components/SideProject";
 
-const hostURL = "https://thomas-alemayehum.web.app/assets/projects";
-
 function Projects() {
   const projectInfo = [
     {
@@ -12,34 +10,34 @@ function Projects() {
       title: "Airbnb Clone",
       description_short:
         "A clone Airbnb website that can be used to view and book rooms/stays in different locations",
-      header_image_path: `${hostURL}/Airbnb-Clone.png`,
+      header_image_path: `/img/projects/Airbnb-Clone.png`,
       github_link: "https://github.com/thomasalemayehu/Airbnb-Clone.git",
-      external_link: "https://airbnb-clone-kappa-wine.vercel.app/",
+      // external_link: "https://airbnb-clone-kappa-wine.vercel.app/",
     },
     {
       id: 2,
       title: "Amazon Clone",
       description_short:
         "A clone E-Commerce website that allows purchase of different items",
-      header_image_path: `${hostURL}/Amazon-Clone.png`,
+      header_image_path: `/img/projects/Amazon-Clone.png`,
       github_link: "https://github.com/thomasalemayehu/Amazon-Clone",
-      external_link: "https://amazon-clone-two-gold.vercel.app/",
+      // external_link: "https://amazon-clone-two-gold.vercel.app/",
     },
     {
       id: 3,
       title: "Ethiopian Fantasy Premier League - Admin",
       description_short:
         "A point based competitive platform that rewards users based on real world player performance of selected players. Web application allows admins to maintain teams in league, players, fixtures , fixtures scheduling and lineups.",
-      header_image_path: `${hostURL}/EFPL.png`,
+      header_image_path: `/img/projects/EFPL.png`,
       github_link: "https://github.com/thomasalemayehu/EFPL",
-      external_link: "https://efpl-app.web.app",
+      // external_link: "https://efpl-app.web.app",
     },
     {
       id: 4,
       title: "Ethiopian Fantasy Premier League - User",
       description_short:
         "A point based competitive platform that rewards users based on real world player performance of selected players. Mobile application allows users to select teams, view player information, view fixtures , view points gained ..",
-      header_image_path: `${hostURL}/EFPL-User.jpg`,
+      header_image_path: `/img/projects/EFPL-User.jpg`,
       github_link: "https://github.com/thomasalemayehu/EFPL",
     },
     {
@@ -47,7 +45,7 @@ function Projects() {
       title: "Addis Complaints",
       description_short:
         "A web based complaint system made free from common web vulnerabilities such as XSS, SQLi, CSRF and automation etc.",
-      header_image_path: `${hostURL}/Addis-Complaints.png`,
+      header_image_path: `/img/projects/Addis-Complaints.png`,
       github_link: "https://github.com/thomasalemayehu/Addis-Complaints",
     },
     {
@@ -55,7 +53,7 @@ function Projects() {
       title: "MicroBanka",
       description_short:
         "An online banking application built with an Express.js and MongoDB backend and an HTML,CSS,AJAX and JavaScript frontend that allows users to transfer,deposit and withdraw money.",
-      header_image_path: `${hostURL}/Addis-Complaints.png`,
+      header_image_path: `/img/projects/MicroBanka.jpg`,
       github_link: "https://github.com/thomasalemayehu/WAP-Project",
     },
   ];
@@ -83,13 +81,6 @@ function Projects() {
       github_link: "https://github.com/thomasalemayehu/FITS-Project",
     },
 
-    {
-      id: 4,
-      title: "Tailwind Personal Website",
-      description_short: " A personal website made with tailwindcss",
-      github_link: "https://github.com/thomasalemayehu/Tailwind-Portfolio",
-      external_link: "https://thomasalemayehu.github.io/Tailwind-Portfolio/",
-    },
     {
       id: 5,
       title: "Cinema Plus",
@@ -150,7 +141,6 @@ function Projects() {
     },
   ];
 
-  
   return (
     <main className={projectStyles.container} id="WorkSection">
       <h3>My Projects</h3>

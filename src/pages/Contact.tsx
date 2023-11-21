@@ -1,13 +1,54 @@
-// utils
-// import formValidator from "../util/FormValidator";
-
 // Import Styles
 import contactStyle from "../assets/styles/Contact.module.css";
 import Button from "../components/Button";
 import content from "../content.json";
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { sendEmail } from "../util/EmailUtil";
 function Contact() {
-  function handleFormSubmission() {
-    // formValidator();
+  async function handleFormSubmission() {
+    const firstNameInput = document.getElementById(
+      "FirstName"
+    ) as HTMLInputElement;
+    let firstName = "";
+    if (firstNameInput) firstName = firstNameInput.value;
+
+    //
+    const lastNameInput = document.getElementById(
+      "LastName"
+    ) as HTMLInputElement;
+    let lastName = "";
+    if (lastNameInput) lastName = lastNameInput.value;
+
+    //
+
+    const emailInput = document.getElementById("Email") as HTMLInputElement;
+    let email = "";
+    if (emailInput) email = emailInput.value;
+
+    //
+    const phoneInput = document.getElementById("Phone") as HTMLInputElement;
+    let phone = "";
+    if (phoneInput) phone = phoneInput.value;
+
+    //
+    const subjectInput = document.getElementById("Subject") as HTMLInputElement;
+    let subject = "";
+    if (subjectInput) subject = phoneInput.value;
+
+    //
+    const messageInput = document.getElementById("Message") as HTMLInputElement;
+    let message = "";
+    if (message) message = messageInput.value;
+
+    await sendEmail({ firstName, lastName, email, subject, phone, message });
+
+    messageInput.value = "";
+    subjectInput.value = "";
+    phoneInput.value = "";
+    emailInput.value = "";
+    lastNameInput.value = "";
+    firstNameInput.value = "";
   }
   return (
     <section
@@ -22,7 +63,7 @@ function Contact() {
           <h2>get in touch</h2>
           <p>
             Fill up the form and I will get back to you as soon as possible! You
-            can also contact me on{" "}
+            can also contact me on
             <a
               href="https://www.linkedin.com/in/thomas-mechessa/"
               target="__blank"
@@ -122,7 +163,13 @@ function Contact() {
       </div>
 
       {/* Right Container */}
-      <form className={contactStyle.contact__container__right} id="Form">
+      <form
+        className={contactStyle.contact__container__right}
+        id="Form"
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <h2>Our very own smoke signal!</h2>
         <div
           className={`${contactStyle.container__row} ${contactStyle.justify__space__between}`}
