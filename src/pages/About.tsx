@@ -74,7 +74,7 @@ function About() {
           <Button
             label=" Download My CV"
             callback={() => {
-              window.open("/docs/sample.pdf");
+              window.open("/docs/Thomas Mechessa Resume.pdf");
             }}
           />
         </div>
