@@ -1,8 +1,8 @@
 {
   "homePageIntroduction": "HOWDY-DOODY!🙃 I'M",
   "fullName": "Thomas Mechessa",
-  "homePageLabel": "Software Engineer",
-  "homePageDescription": "As a highly passionate, creative, and detail-oriented full stack developer with over 5 years of experience, I possess the expertise to craft robust, scalable, and high-performance backend solutions. I excel in creating exceptional, responsive, and imaginative digital experiences that captivate users, even under the pressure of tight deadlines. My dedication to delivering excellence and my ability to seamlessly bridge the gap between backend and frontend development make me an invaluable asset to any project or team.",
+  "homePageLabel": "FULL STACK DEVELOPER(JAVA & JAVASCRIPT)",
+  "homePageDescription": "As a highly passionate, creative, and detail-oriented full stack developer, I possess the expertise to craft robust, scalable, and high-performance backend solutions. I excel in creating exceptional, responsive, and imaginative digital experiences that captivate users, even under the pressure of tight deadlines. My dedication to delivering excellence and my ability to seamlessly bridge the gap between backend and frontend development make me an invaluable asset to any project or team.",
   "aboutPageContent": "I am a highly motivated, detail-oriented, tech-savvy, and organized engineer, I thrive in fast-paced environments and excel at meeting tight deadlines. My commitment to producing high-quality work is reflected in my meticulous approach to coding and problem-solving. I am not just a solitary developer; I am also a passionate team player. My strong communication skills enable me to collaborate effectively with cross-functional teams. I am dedicated to contributing to a company's success. With a solid educational foundation, experience and a strong work ethic, I am excited to embark on new challenges and make meaningful contributions as a full-stack developer.",
   "aboutPageTimeline": [
     {
@@ -11,8 +11,13 @@
       "description": "At AAiT, I developed most of my current qualities. First and foremost I learned to code. I also further developed my communication and dedication skills. I also learned things like creative problem solving and teamwork throughout the projects given with every course."
     },
     {
+      "title": " Kirar Developers (Internship)",
+      "timeline": "May 2021 - Sep 2021",
+      "description": "I became fully involved in the software development industry during my internship at Kirar Developer, actively contributing to actual projects and improving my coding skills. In addition to improving my technical abilities, this practical experience gave me insightful knowledge on how to solve problems in a fast-paced team setting."
+    },
+    {
       "title": "Jersuma Trading P.L.C",
-      "timeline": "Jul 2018 - Jun 2021",
+      "timeline": "May 2021 - Jan 2022",
       "description": " At Jersuma, I worked as a Full Stack Software Engineer. Developed responsive user interfaces using HTML, CSS, JavaScript, AJAX, and React.js at Jersuma Trading, ensuring seamless integration with backend systems. Implemented robust state management with Redux, designed RestfulAPIs with Express.js and Spring Boot"
     },
     {
@@ -22,12 +27,12 @@
     },
     {
       "title": "Mohas Technologies",
-      "timeline": "Oct 2022 - Feb 2023",
+      "timeline": "Dec 2022 - Mar 2023",
       "description": "Built to Mobile Application Development projects, crafting user interfaces with Flutter components and employing the BLOC pattern for effective state management. Integrated RestfulAPIs to enhance functionality and provided regular progress updates."
     },
     {
       "title": "Kin Ideas",
-      "timeline": "Apr 2021 - Aug 2023",
+      "timeline": "May 2022 - Apr 2023",
       "description": "Developed end to end systems with React.js, Flutter, Express.js, Django, PostgreSQL and Firebase. Implemented OAuth2 and OTP authentication for web and mobile applications. Conducted code reviews, provided feedback on GitHub pull requests, and ensured code quality standards"
     },
 
