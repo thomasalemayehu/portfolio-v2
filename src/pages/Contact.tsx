@@ -65,7 +65,7 @@ function Contact() {
             Fill up the form and I will get back to you as soon as possible! You
             can also contact me on
             <a
-              href="https://www.linkedin.com/in/thomas-mechessa/"
+              href={content.linkedinUrl}
               target="__blank"
             >
               Linkedin
