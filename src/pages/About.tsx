@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import aboutStyles from "../assets/styles/About.module.css";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 import content from "../content.json";
 function About() {
   function loadTimeLine() {
