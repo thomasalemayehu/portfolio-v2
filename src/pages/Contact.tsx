@@ -114,7 +114,7 @@ function Contact() {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/thomas-alemayehu-a61675204/"
+            href="https://www.linkedin.com/in/thomas-mechessa2/"
             target="__blank"
             className={contactStyle.contact__socials}
           >
