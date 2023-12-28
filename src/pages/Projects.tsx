@@ -1,4 +1,4 @@
-import LeadProjectCard from "../components/LeadProject";
+// import LeadProjectCard from "../components/LeadProject";
 
 import projectStyles from "../assets/styles/Projects.module.css";
 import SideProject from "../components/SideProject";

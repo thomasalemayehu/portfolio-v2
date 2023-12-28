@@ -71,12 +71,12 @@ function About() {
         <div className={aboutStyles.about__page__right}>
           <h3> About Me </h3>
           <p>{content.aboutPageContent}</p>
-          <Button
+          {/* <Button
             label=" Download My CV"
             callback={() => {
               window.open("/docs/Thomas Mechessa Resume.pdf");
             }}
-          />
+          /> */}
         </div>
       </div>
 
