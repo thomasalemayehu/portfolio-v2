@@ -12,23 +12,23 @@
     },
     {
       "title": "Jersuma Trading P.L.C",
+      "timeline": "Jul 2018 - Sep 2021",
+      "description": "Frontend Developer (Addis Ababa, Ethiopia)"
+    },
+    {
+      "title": "Jersuma Trading P.L.C",
       "timeline": "Jul 2018 - Jun 2021",
-      "description": " At Jersuma, I worked as a Full Stack Software Engineer. Developed responsive user interfaces using HTML, CSS, JavaScript, AJAX, and React.js at Jersuma Trading, ensuring seamless integration with backend systems. Implemented robust state management with Redux, designed RestfulAPIs with Express.js and Spring Boot"
+      "description": "Full Stack Developer (Addis Ababa, Ethiopia)"
     },
     {
       "title": "Gebeya Talent",
       "timeline": "2022 - 2023",
-      "description": "I have been in the Gebeya Talent pool(Freelance) since 2022. Gebeya was my first journey of application and interview. It is a great experience to have in my locker. I have worked on multiple freelance projects ranging from Rest Api Development to static websites to data format conversion scripts."
-    },
-    {
-      "title": "Mohas Technologies",
-      "timeline": "Oct 2022 - Feb 2023",
-      "description": "Built to Mobile Application Development projects, crafting user interfaces with Flutter components and employing the BLOC pattern for effective state management. Integrated RestfulAPIs to enhance functionality and provided regular progress updates."
+      "description": "Freelance"
     },
     {
       "title": "Kin Ideas",
-      "timeline": "Apr 2021 - Aug 2023",
-      "description": "Developed end to end systems with React.js, Flutter, Express.js, Django, PostgreSQL and Firebase. Implemented OAuth2 and OTP authentication for web and mobile applications. Conducted code reviews, provided feedback on GitHub pull requests, and ensured code quality standards"
+      "timeline": "Jun 2021 - Aug 2023",
+      "description": "Senior Software Engineer (Addis Ababa, Ethiopia)"
     },
 
     {
@@ -37,6 +37,6 @@
       "description": "Pursuing my higher education at Maharashi International University. Took important courses like Advanced Software Development, Enterprise Architecture, Algorithms and Web Application Development. Standing GPA of 3.85. Currently in the CPT phase of my education while courses continue via distance learning."
     }
   ],
-  "location": "Fairfield,Iowa, USA",
+  "location": "Charlotte,North Carolina, USA",
   "email": "thomas2alexmech@gmail.com"
 }
