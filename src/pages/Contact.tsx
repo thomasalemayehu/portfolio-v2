@@ -63,7 +63,7 @@ function Contact() {
           <h2>get in touch</h2>
           <p>
             Fill up the form and I will get back to you as soon as possible! You
-            can also contact me on
+            can also contact me on <span> </span>
             <a
               href="https://www.linkedin.com/in/thomas-mechessa2/"
               target="__blank"
